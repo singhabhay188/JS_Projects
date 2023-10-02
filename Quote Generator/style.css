@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;   
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    justify-content: center;
+    background: linear-gradient(to bottom, #87CEEB, #ADD8E6);
+}
+
+#card{
+    max-width: 60%;
+    background-color: white;
+    border-radius: 25px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+}
+#card h1{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+#card h1::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #2974e0;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#quoteDiv{
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Young Serif', serif;
+}
+#quote{
+    text-align: center;
+}
+#author{
+    width: 100%;
+    text-align: end;
+}
+.loader{
+    width: 20px;
+    height: 20px;
+    display: none;
+    border-radius: 50px;
+    border: 5px solid grey;
+    border-top-color: black;
+    animation: 1s linear load infinite;
+}
+.buttons{
+    font-family: 'Open Sans', sans-serif;
+    gap: 30px;
+}
+.buttons button{
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    user-select: none;
+}
+button:nth-child(1){
+    background-color: #2974e0;
+    border: none;
+    color: white;
+}
+button:nth-child(2){
+    border: 1px solid grey;
+    background-color: white;
+}
+button img{
+    height: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+@keyframes load {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:600px) {
+    #card{
+        min-width: 90%;
+    }
+}

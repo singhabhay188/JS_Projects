@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex">
+    
+    <div id="warning">
+        ⚠️ Min Length of Task should be 3 ⚠️
+    </div>
+    
+    <main class="flex">
+        <div id="heading" class="flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/6348/6348058.png" alt="">
+            <h2>To Do List </h2>
+        </div>
+        <div id="task-input-div" class="flex">
+            <input type="text" placeholder="Add your task" id="task-input">
+            <button id="task-add" onclick="addTask()">Add</button>
+        </div>
+        <div id="tasksDiv">
+            <ul id="tasks">
+                <!-- <li>task 1</li> -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

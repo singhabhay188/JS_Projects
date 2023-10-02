@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    justify-content: center;
+}
+
+
+#warning{
+    position: absolute;
+    top: 2%;
+    background-color: white;
+    padding: 3px;
+    color: red;
+    display: none;
+    transition: all 0.2s linear;
+}
+
+
+main{
+    max-height: 85%;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#heading{
+    gap: 20px;
+    color: #230f7e;
+    width: 100%;
+}
+#heading h2::selection{
+    background-color: black;
+    color: white;
+}
+#heading img{
+    height: 50px;
+}
+
+#task-input-div{
+    width: 90%;
+    gap: 5px;
+    height: 32px;
+}
+#task-input-div input{
+    width: 100%;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+#task-input-div input:focus{
+    border-color: #ff643c;
+}
+#task-input-div button{
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    color: white;
+    background-color: #ff643c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#tasksDiv{
+    width: 95%;
+    overflow-y: auto;
+}
+#tasks li{
+    padding: 15px 50px ;
+    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+#tasks li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+#tasks li.checked::before{
+    background-image: url('images/checked.png');
+}
+#tasks li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+}
+#tasks li span{
+    position: absolute;
+    right: 0;
+}
+#tasks li span:hover{
+    background-color: #edeff0;
+    padding: 5px;
+}
+
+
+@media (max-width:800px) {
+    main{
+        width: min(70%,450px);
+    }
+    
+}
+@media (max-width:500px) {
+    main{
+        width: min(90%,400px);
+    }
+}    
