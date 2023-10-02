@@ -18,3 +18,29 @@ body{
 h1::selection{
     background-color: black;
 }
+
+ul li{
+    line-height: 200%;
+    list-style-type: none;
+    padding: 15px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+
+@media (max-width:500px) {
+    body{
+        padding: 5%;
+    }
+}
