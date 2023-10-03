@@ -9,28 +9,28 @@
 <body class="flex">
     <div id="calc">
         <div id="display" class="flex">
-            <input type="text" id="expression">
+            <input type="text" placeholder="0" id="expression">
         </div>
         <div id="buttons">
             <div class="button flex" onclick=clearInput()>AC</div>
-            <div class="button flex">DE</div>
-            <div class="button flex">.</div>
-            <div class="button flex">/</div>
-            <div class="button flex">7</div>
-            <div class="button flex">8</div>
-            <div class="button flex">9</div>
-            <div class="button flex">*</div>
-            <div class="button flex">4</div>
-            <div class="button flex">5</div>
-            <div class="button flex">6</div>
-            <div class="button flex">-</div>
-            <div class="button flex">1</div>
-            <div class="button flex">2</div>
-            <div class="button flex">3</div>
-            <div class="button flex">+</div>
-            <div class="button flex">00</div>
-            <div class="button flex">0</div>
-            <div class="button flex" id="equal">=</div>
+            <div class="button flex" onclick=clearLastInput()>DE</div>
+            <div class="button flex opearator" onclick="enter('.')">.</div>
+            <div class="button flex opearator" onclick="enter('/')">/</div>
+            <div class="button flex" onclick="enter('7')">7</div>
+            <div class="button flex" onclick="enter('8')">8</div>
+            <div class="button flex" onclick="enter('9')">9</div>
+            <div class="button flex opearator" onclick="enter('*')">*</div>
+            <div class="button flex" onclick="enter('4')">4</div>
+            <div class="button flex" onclick="enter('5')">5</div>
+            <div class="button flex" onclick="enter('6')">6</div>
+            <div class="button flex opearator" onclick="enter('-')">-</div>
+            <div class="button flex" onclick="enter('1')">1</div>
+            <div class="button flex" onclick="enter('2')">2</div>
+            <div class="button flex" onclick="enter('3')">3</div>
+            <div class="button flex opearator" onclick="enter('+')">+</div>
+            <div class="button flex" onclick="enter('00')">00</div>
+            <div class="button flex" onclick="enter('0')">0</div>
+            <div class="button flex" id="equal" onclick=solve()>=</div>
         </div>
     </div>
 
