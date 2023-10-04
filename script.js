@@ -1,5 +1,10 @@
 let projects = [
     {
+        name:'Calculator',
+        about:'Simple implementation of calculator is done here',
+        url: 'Calculator/index.html'
+    },
+    {
         name:'Weather Project',
         about:'Just enter the name of city and you will get the weather of the city, also error handling is done here',
         url: 'Weather Project/index.html'
@@ -43,6 +48,11 @@ let projects = [
         name:'Toast Notification',
         about:'A simple ui where where toast notification of 3 different type is shown',
         url: 'Toast Notification/index.html'
+    },
+    {
+        name:'Pop Up Form Submit',
+        about:'A simple pop up which is created and can be used where submission of data is implemented',
+        url: 'Pop Up/index.html'
     }
 ]
 
