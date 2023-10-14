@@ -50,6 +50,16 @@ let projects = [
         url: 'Toast Notification/index.html'
     },
     {
+        name:'Hide Show Password',
+        about:'This is an implementation of hiding and showing password with a eye icon changing',
+        url: 'Hide Show Password/index.html'
+    },
+    {
+        name:'Mini Calendar',
+        about:'This is an implementation of simple calendar which displays date and day in beautifyl format.',
+        url: 'Mini Calendar/index.html'
+    },
+    {
         name:'Pop Up Form Submit',
         about:'A simple pop up which is created and can be used where submission of data is implemented',
         url: 'Pop Up/index.html'
