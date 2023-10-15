@@ -63,6 +63,11 @@ let projects = [
         name:'Pop Up Form Submit',
         about:'A simple pop up which is created and can be used where submission of data is implemented',
         url: 'Pop Up/index.html'
+    },
+    {
+        name:'Password Strength Indicator',
+        about:'A simple project to display the strength of the password being typed',
+        url: 'Password Strength/index.html'
     }
 ]
 
