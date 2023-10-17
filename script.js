@@ -68,6 +68,11 @@ let projects = [
         name:'Password Strength Indicator',
         about:'A simple project to display the strength of the password being typed',
         url: 'Password Strength/index.html'
+    },
+    {
+        name:'Text to Speech',
+        about:'A simple project to that implements text to speech with different languages supported',
+        url: 'Text to Voice Converter/index.html'
     }
 ]
 
